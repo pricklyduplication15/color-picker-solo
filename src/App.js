@@ -5,6 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { fas } from '@fortawesome/free-solid-svg-icons'
 import { faTwitter } from '@fortawesome/free-brands-svg-icons'
+import "./App.css";
 
 library.add(fas, faTwitter)
 
@@ -49,7 +50,7 @@ export default function App() {
   }
 
   return (
-    <div className="App" id="quote-box" style={{ textAlign: "center"}}>
+    <div className="quote-box" id="quote-box">
       <h1>Random Quote Generator</h1>
       {loading && <div>A moment please...</div>}
       {error && (
